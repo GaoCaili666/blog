@@ -8,45 +8,45 @@
 <h2 id="coding"><a href="#coding" class="headerlink" title="coding"></a>coding</h2><p>coding和github类似，因为coding是国内的，访问速度比github快</p>
 <h3 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h3><p>1、进入<a href="https://coding.net/" target="_blank" rel="noopener">coding</a> 点击注册</p>
 <p>2、填写好团队名称，团队域名，点击下一步</p>
-<img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/QQ截图20200726075901.png" alt="创建团队" style="zoom:67%;">
+<img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/QQ截图20200726075901.png" alt="创建团队" style="zoom:67%;">
 
 <p>3、用自己的微信扫描二维码，接下来就完成了注册</p>
-<img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/QQ截图20200726080422.png" alt="创建用户" style="zoom:67%;">
+<img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/QQ截图20200726080422.png" alt="创建用户" style="zoom:67%;">
 
 
 
 <h3 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h3><p>1、点击创建项目</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/QQ%E6%88%AA%E5%9B%BE20200726081708.png" alt="创建项目"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/QQ%E6%88%AA%E5%9B%BE20200726081708.png" alt="创建项目"></p>
 <p>2、这里选择DevOps项目，其它的项目模板会隐藏静态网站的构建，对后面的部署不方便，所以这里选择DevOps项目</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/QQ%E6%88%AA%E5%9B%BE20200726081748.png" alt="选择模板"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/QQ%E6%88%AA%E5%9B%BE20200726081748.png" alt="选择模板"></p>
 <p>3、填写项目名称，项目标识会自动生成，然后点击完成创建</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/5.png" alt="填写项目基本信息"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/5.png" alt="填写项目基本信息"></p>
 <h3 id="添加SSH公钥"><a href="#添加SSH公钥" class="headerlink" title="添加SSH公钥"></a>添加SSH公钥</h3><p>我们克隆项目有两种方式https和SSH方式，https方式每次操作都需要输入Coding的账号和密码，不方便，所以我们采用SSH方式</p>
 <p>1、打开git bash，输入如下命令创建SSH key</p>
 <p>ssh-keygen -t rsa -C “<a href="mailto:your_email@youremail.com">your_email@youremail.com</a>“</p>
 <p>双引号里的邮箱改成你自己的邮箱，然后一路回车，会出现一张萌萌哒图</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/6.png" alt></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/6.png" alt></p>
 <p>2、如果一切顺利的话，可以在用户主目录（C:\Users\用户名）里找到<code>.ssh</code>目录，里面有<code>id_rsa</code>和<code>id_rsa.pub</code>两个文件，这两个就是SSH Key的秘钥对，<code>id_rsa</code>是私钥，不能泄露出去，<code>id_rsa.pub</code>是公钥，可以放心地告诉任何人。</p>
 <p>3、打开Coding，点击个人账户设置</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726082856036.png" alt="image-20200726082856036"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726082856036.png" alt="image-20200726082856036"></p>
 <p>4、点击SSH公钥，然后点击新增公钥</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726083101991.png" alt="image-20200726083101991"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726083101991.png" alt="image-20200726083101991"></p>
 <p>5、在公钥内容上填写<code>id_rsa.pub</code>文件的内容</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726113141684.png" alt="image-20200726113141684"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726113141684.png" alt="image-20200726113141684"></p>
 <h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p>hexo是一款基于Node.js的静态博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
 <h3 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h3><p>简单的讲node是一个Javascript运行环境，下载地址<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">node.js</a>,选择Windows.msi,64位或32位即可，安装的时候除了更改安装位置一路Next即可。</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726114128769.png" alt="image-20200726114128769"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726114128769.png" alt="image-20200726114128769"></p>
 <p>打开git bash,输入 node -v,npm -v,出现下图即代表安装成功。</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726114240852.png" alt="image-20200726114240852"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726114240852.png" alt="image-20200726114240852"></p>
 <h3 id="npm"><a href="#npm" class="headerlink" title="npm"></a>npm</h3><p>npm是随同Node.js一起安装的包管理工具,我们可以使用它从服务器上下载其他的程序，例如这里hexo即可使用Npm下载，但由于安装国外的东西速度会很慢，所以这里安装淘宝NPM，代替npm使用。安装后使用cnpm代替原来的npm命令即可。<br>打开git bash 执行命令</p>
 <figure class="highlight tex"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
 
 <h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>首先要建立一个文件夹，起名为blog，我创建了<code>E:\blog\blog</code>文件夹</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726114812675.png" alt="image-20200726114812675"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726114812675.png" alt="image-20200726114812675"></p>
 <p>在 <code>E:\blog</code>下右键打开git bash，依次运行命令</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
 
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726121104659.png" alt="image-20200726121104659"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726121104659.png" alt="image-20200726121104659"></p>
 <p>进入 <code>E:\blog\blog</code></p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd blog</span><br></pre></td></tr></table></figure>
 
@@ -54,35 +54,35 @@
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cnpm install</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 
 <p>打开浏览器，输入localhost:4000，出现以下内容，代表hexo安装成功</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726121337794.png" alt="image-20200726121337794"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726121337794.png" alt="image-20200726121337794"></p>
 <h4 id="相关命令"><a href="#相关命令" class="headerlink" title="相关命令"></a>相关命令</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo clean, 清除缓存文件 (db.json) 和已生成的静态文件 (public)</span><br><span class="line">hexo g(或者 hexo generate)，生成静态文件(public目录下)。</span><br><span class="line">hexo d(或者 hexo deploy)，将代码部署到Coding</span><br><span class="line">hexo s(或者 hexo server)，hexo运行在本地，在localhost:4000即可预览效果。</span><br><span class="line">如果命令输错了，按 ctrl+c 终止当前命令即可。</span><br></pre></td></tr></table></figure>
 
 <p>详细命令可以参考<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo</a>官网</p>
 <h3 id="部署到Coding"><a href="#部署到Coding" class="headerlink" title="部署到Coding"></a>部署到Coding</h3><p>1、打开之前创建的blog项目，复制SSH地址</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726120743800.png" alt="image-20200726120743800"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726120743800.png" alt="image-20200726120743800"></p>
 <p>2、打开 <code>E:\blog\blog</code>目录下的站点配置文件_config.yml</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726121430664.png" alt="image-20200726121430664"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726121430664.png" alt="image-20200726121430664"></p>
 <p>Ctrl+F查找deploy，把下面的代码复制到最后，将coding后面的地址改为刚刚复制的那个地址，然后保存</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> </span><br><span class="line">    <span class="attr">coding:</span> <span class="string">git@e.coding.net:gclstart/blog/blog.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726121813809.png" alt="image-20200726121813809"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726121813809.png" alt="image-20200726121813809"></p>
 <p>3、在git bash下进入 <code>E:\blog\blog</code> 执行如下代码</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cnpm install hexo-deployer-git --save</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
 <p>4、点开Coding的代码，出现了东西即代表成功</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726122417268.png" alt="image-20200726122417268"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726122417268.png" alt="image-20200726122417268"></p>
 <p>5、现在我们创建静态网站，点击持续部署下的静态网站，先实名认证后，点击立即发布静态网站</p>
 <p>创建静态网站的过程可以参考<a href="https://help.coding.net/docs/devops/cd/static-website.html" target="_blank" rel="noopener">coding的官方文档</a></p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726122746082.png" alt="image-20200726122746082"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726122746082.png" alt="image-20200726122746082"></p>
 <p>填写网站名称，点击保存</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726123031337.png" alt="image-20200726123031337"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726123031337.png" alt="image-20200726123031337"></p>
 <p>点击立即部署</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726123449717.png" alt="image-20200726123449717"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726123449717.png" alt="image-20200726123449717"></p>
 <p>成功之后，就可以通过访问地址来访问了，和本地访问是一样的效果，可能要等一会才能访问成功</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726123627990.png" alt="image-20200726123627990"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726123627990.png" alt="image-20200726123627990"></p>
 <h3 id="hexo的简单配置"><a href="#hexo的简单配置" class="headerlink" title="hexo的简单配置"></a>hexo的简单配置</h3><p>打开 <code>E:\blog\blog</code>目录下的站点配置文件_config.yml。</p>
 <p>修改一下几项，除了language不变，其他的改成你自己的，然后保存</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726124231866.png" alt="image-20200726124231866"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/image-20200726124231866.png" alt="image-20200726124231866"></p>
 <p>然后依次执行如下代码，这里为什么有hexo clean，如果本地访问和coding的访问地址访问的效果不一致，就需要执行hexo clean</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
@@ -101,19 +101,19 @@
     <title>建立博客系列（三）：发布第一篇博客</title>
     <url>/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h2 id="相关配置"><a href="#相关配置" class="headerlink" title="相关配置"></a>相关配置</h2><p>打开<strong>站点配置文件</strong>，将post_asset_folder设置为true,设置后生成文章的时候会生成一个同名文件夹，供我们放图片。</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/image-20200726170936900.png" alt="image-20200726170936900"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/image-20200726170936900.png" alt="image-20200726170936900"></p>
 <p>打开git bash到<code>E:\blog\blog</code>目录，执行以下代码</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cnpm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
 
 <p>打开<strong>主题配置文件</strong>，将摘要打开</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/image-20200726171128596.png" alt="image-20200726171128596"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/image-20200726171128596.png" alt="image-20200726171128596"></p>
 <p>打开source/_posts文件夹，可以把自动生成的Hello World.md删除</p>
 <h2 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h2><p>推荐使用Typora编辑器</p>
 <h2 id="开始写作"><a href="#开始写作" class="headerlink" title="开始写作"></a>开始写作</h2><p>打开git bash到<code>E:\blog\blog</code>目录，执行以下代码</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo new “文章标题”</span><br></pre></td></tr></table></figure>
 
 <p>增加categories，冒号后是空格，写自己的分类名字<br>增加tags,冒号回车，然后两个空格，横线，标签名，可添加多个标签</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/image-20200726172230372.png" alt="image-20200726172230372"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/image-20200726172230372.png" alt="image-20200726172230372"></p>
 <p>然后在下边用MarkDown的语法写文章即可<br>写完之后ctrl+S 保存<br>然后 hexo g,hexo d，就可以发布到自己的博客了！！！！！</p>
 ]]></content>
       <categories>
@@ -143,36 +143,36 @@
 </blockquote>
 <p>这里有两个_config.yml文件，我们把hexo的配置文件称为<strong>站点配置文件</strong>，next主题的配置文件称为<strong>主题配置文件</strong></p>
 <p>打开<strong>站点配置文件</strong>，将theme: 项改为next，记住之后所有的配置中冒号后边都先有空格</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726162208708.png" alt="image-20200726162208708"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726162208708.png" alt="image-20200726162208708"></p>
 <p>运行hexo g， hexo s 打开localhost:4000，看是否成功</p>
 <p>运行hexo d（部署到coding），打开自己的域名，看是否成功</p>
 <p>如果没有变化,<strong>先执行hexo clean（以后如果本地和服务器上的不一致，均先执行这步重试）</strong>,再执行 hexo g,hexo d</p>
 <h2 id="选择next的风格"><a href="#选择next的风格" class="headerlink" title="选择next的风格"></a>选择next的风格</h2><p>打开<strong>主题配置文件</strong>，next提供了四种风格，这里我选择的是Gemini</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726162346437.png" alt="image-20200726162346437"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726162346437.png" alt="image-20200726162346437"></p>
 <h2 id="菜单设置"><a href="#菜单设置" class="headerlink" title="菜单设置"></a>菜单设置</h2><p>打开<strong>主题配置文件</strong></p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726163335226.png" alt="image-20200726163335226"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726163335226.png" alt="image-20200726163335226"></p>
 <p>home是主页，categories是分类，archives是归档，即按时间显示文章，tags是标签，将以上几项的#取消。</p>
 <p>打开git bash到<code>E:\blog\blog</code>目录，执行以下代码</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
 
 <p>打开blog\source\categories\index.md文件，添加type</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726163513556.png" alt="image-20200726163513556"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726163513556.png" alt="image-20200726163513556"></p>
 <p>打开blog\source\tags\index.md文件，添加type</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726163535408.png" alt="image-20200726163535408"></p>
-<h2 id="设置头像"><a href="#设置头像" class="headerlink" title="设置头像"></a>设置头像</h2><p>将头像放到 source/images/ 目录下，在<strong>站点配置文件</strong>新增avatar 字段添加路径<img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726163710193.png" alt="image-20200726163710193"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726163535408.png" alt="image-20200726163535408"></p>
+<h2 id="设置头像"><a href="#设置头像" class="headerlink" title="设置头像"></a>设置头像</h2><p>将头像放到 source/images/ 目录下，在<strong>站点配置文件</strong>新增avatar 字段添加路径<img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726163710193.png" alt="image-20200726163710193"></p>
 <h2 id="添加腾讯公益404页面"><a href="#添加腾讯公益404页面" class="headerlink" title="添加腾讯公益404页面"></a>添加腾讯公益404页面</h2><p>腾讯公益404页面，寻找丢失儿童，让大家一起关注此项公益事业！</p>
 <p>使用方法，新建 404.html 页面，放到主题的 <code>source</code> 目录下，内容如下：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">HTML</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"content-type"</span> <span class="attr">content</span>=<span class="string">"text/html;charset=utf-8;"</span>/&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=edge,chrome=1"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"robots"</span> <span class="attr">content</span>=<span class="string">"all"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"robots"</span> <span class="attr">content</span>=<span class="string">"index,follow"</span>/&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">href</span>=<span class="string">"https://qzone.qq.com/gy/404/style/404style.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/plain"</span> <span class="attr">src</span>=<span class="string">"http://www.qq.com/404/search_children.js"</span></span></span><br><span class="line"><span class="tag">          <span class="attr">charset</span>=<span class="string">"utf-8"</span> <span class="attr">homePageUrl</span>=<span class="string">"/"</span></span></span><br><span class="line"><span class="tag">          <span class="attr">homePageName</span>=<span class="string">"回到我的主页"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://qzone.qq.com/gy/404/data.js"</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://qzone.qq.com/gy/404/page.js"</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="百度统计"><a href="#百度统计" class="headerlink" title="百度统计"></a>百度统计</h2><p>进入<a href="http://tongji.baidu.com/" target="_blank" rel="noopener">百度统计</a>,注册百度统计站长版账号，然后添加自己的网站，并点击获取代码</p>
 <p>新增网站</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726165001292.png" alt="image-20200726165001292"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726165001292.png" alt="image-20200726165001292"></p>
 <p>填写coding上的域名</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726165041171.png" alt="image-20200726165041171"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726165041171.png" alt="image-20200726165041171"></p>
 <p>复制问号后面的代码</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726165155732.png" alt="image-20200726165155732"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726165155732.png" alt="image-20200726165155732"></p>
 <p>打开hexo的配置文件, 新增字段 baidu_analytics 字段，值设置成刚刚复制的</p>
-<p><img src="/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726165259955.png" alt="image-20200726165259955"></p>
+<p><img src="/blog/blog/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726165259955.png" alt="image-20200726165259955"></p>
 <h2 id="搜索服务"><a href="#搜索服务" class="headerlink" title="搜索服务"></a>搜索服务</h2><p>执行命令</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cnpm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
 
