@@ -100,6 +100,32 @@
       </tags>
   </entry>
   <entry>
+    <title>建立博客系列（三）：发布第一篇博客</title>
+    <url>/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="相关配置"><a href="#相关配置" class="headerlink" title="相关配置"></a>相关配置</h2><p>打开<strong>站点配置文件</strong>，将post_asset_folder设置为true,设置后生成文章的时候会生成一个同名文件夹，供我们放图片。</p>
+<p><img src="/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/image-20200726170936900.png" alt="image-20200726170936900"></p>
+<p>打开git bash到<code>E:\blog\blog</code>目录，执行以下代码</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cnpm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+
+<p>打开<strong>主题配置文件</strong>，将摘要打开</p>
+<p><img src="/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/image-20200726171128596.png" alt="image-20200726171128596"></p>
+<p>打开source/_posts文件夹，可以把自动生成的Hello World.md删除</p>
+<h2 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h2><p>推荐使用Typora编辑器</p>
+<h2 id="开始写作"><a href="#开始写作" class="headerlink" title="开始写作"></a>开始写作</h2><p>打开git bash到<code>E:\blog\blog</code>目录，执行以下代码</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo new “文章标题”</span><br></pre></td></tr></table></figure>
+
+<p>增加categories，冒号后是空格，写自己的分类名字<br>增加tags,冒号回车，然后两个空格，横线，标签名，可添加多个标签</p>
+<p><img src="/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/image-20200726172230372.png" alt="image-20200726172230372"></p>
+<p>然后在下边用MarkDown的语法写文章即可<br>写完之后ctrl+S 保存<br>然后 hexo g,hexo d，就可以发布到自己的博客了！！！！！</p>
+]]></content>
+      <categories>
+        <category>建立博客</category>
+      </categories>
+      <tags>
+        <tag>Typora</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>gitbook的使用</title>
     <url>/2020/07/29/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h2 id="gitbook简介"><a href="#gitbook简介" class="headerlink" title="gitbook简介"></a>gitbook简介</h2><ul>
@@ -137,32 +163,6 @@
       <tags>
         <tag>gitbook</tag>
         <tag>github page服务</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>建立博客系列（三）：发布第一篇博客</title>
-    <url>/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h2 id="相关配置"><a href="#相关配置" class="headerlink" title="相关配置"></a>相关配置</h2><p>打开<strong>站点配置文件</strong>，将post_asset_folder设置为true,设置后生成文章的时候会生成一个同名文件夹，供我们放图片。</p>
-<p><img src="/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/image-20200726170936900.png" alt="image-20200726170936900"></p>
-<p>打开git bash到<code>E:\blog\blog</code>目录，执行以下代码</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cnpm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
-
-<p>打开<strong>主题配置文件</strong>，将摘要打开</p>
-<p><img src="/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/image-20200726171128596.png" alt="image-20200726171128596"></p>
-<p>打开source/_posts文件夹，可以把自动生成的Hello World.md删除</p>
-<h2 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h2><p>推荐使用Typora编辑器</p>
-<h2 id="开始写作"><a href="#开始写作" class="headerlink" title="开始写作"></a>开始写作</h2><p>打开git bash到<code>E:\blog\blog</code>目录，执行以下代码</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo new “文章标题”</span><br></pre></td></tr></table></figure>
-
-<p>增加categories，冒号后是空格，写自己的分类名字<br>增加tags,冒号回车，然后两个空格，横线，标签名，可添加多个标签</p>
-<p><img src="/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/image-20200726172230372.png" alt="image-20200726172230372"></p>
-<p>然后在下边用MarkDown的语法写文章即可<br>写完之后ctrl+S 保存<br>然后 hexo g,hexo d，就可以发布到自己的博客了！！！！！</p>
-]]></content>
-      <categories>
-        <category>建立博客</category>
-      </categories>
-      <tags>
-        <tag>Typora</tag>
       </tags>
   </entry>
   <entry>
