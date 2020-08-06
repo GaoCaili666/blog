@@ -98,7 +98,7 @@
 
 
 
-  <meta name="keywords" content="github,gitbook," />
+  <meta name="keywords" content="gitbook,github," />
 
 
 
@@ -119,12 +119,13 @@
 <meta property="og:image" content="http://yoursite.com/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200729181155317.png">
 <meta property="og:image" content="http://yoursite.com/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806141304125.png">
 <meta property="og:image" content="http://yoursite.com/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806115324065.png">
-<meta property="og:image" content="http://yoursite.com/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806115414310.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806170905763.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806170932988.png">
 <meta property="article:published_time" content="2020-07-31T09:29:17.000Z">
-<meta property="article:modified_time" content="2020-08-06T06:13:06.186Z">
+<meta property="article:modified_time" content="2020-08-06T09:39:50.751Z">
 <meta property="article:author" content="gclstart">
-<meta property="article:tag" content="github">
 <meta property="article:tag" content="gitbook">
+<meta property="article:tag" content="github">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://yoursite.com/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200729181023365.png">
 
@@ -433,14 +434,19 @@
 <h3 id="发布到github"><a href="#发布到github" class="headerlink" title="发布到github"></a>发布到github</h3><p>1、在github上新建一个名为book的仓库，复制仓库地址，我的仓库地址为</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git@github.com:GaoCaili666&#x2F;book.git</span><br></pre></td></tr></table></figure>
 
-<p>2、先使用 <code>gitbook build</code>命令生成静态网站，再进入 <code>_book</code>文件夹，打开git bash，执行以下命令，这样就可以把<code>_book</code>文件夹下的静态网站提交到github上，这些都是git命令</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git remote add origin git@github.com:GaoCaili666/book.git</span><br><span class="line">git add *</span><br><span class="line">git commit -m "第一次提交"</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+<p>2、在book目录下打开git bash，执行以下命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">gitbook build . ./docs 	#将生成的静态网站输出到docs目录下</span><br><span class="line">git init				#初始化git</span><br><span class="line">git remote add origin git@github.com:GaoCaili666/book.git	#添加远程地址</span><br><span class="line">git add *</span><br><span class="line">git commit -m "第一次提交"	 #提交代码</span><br><span class="line">git push -u origin master	#推送到远程</span><br></pre></td></tr></table></figure>
 
 <p>3、现在我们使用github的pages服务来创建静态网站，进入项目，点击setting</p>
 <p><img src="/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806115324065.png" alt="image-20200806115324065"></p>
-<p>4、往下滑可以看到Github Pages，我们选择master，在Custom domain中填写leetcode.gclstart.top，并保存</p>
-<p><img src="/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806115414310.png" alt="image-20200806115414310"></p>
+<p>4、往下滑可以看到Github Pages，我们选择master，再选择/docs，因为我们要把docs里的代码作为静态网站点击save保存</p>
+<p><img src="/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806170905763.png" alt="image-20200806170905763"></p>
+<p>然后在Custom domain中填写leetcode.gclstart.top，并保存</p>
+<p><img src="/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806170932988.png" alt="image-20200806170932988"></p>
 <p>5、等待一会就可以使用leetcode.gclstart.top来访问你的gitbook</p>
+<p>6、以后提交代码，在book目录下打开git bash，只需执行以下代码</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">gitbook build . ./docs</span><br><span class="line">git add *</span><br><span class="line">git commit -m "提交代码"</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
@@ -487,9 +493,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/github/" rel="tag"># github</a>
-          
             <a href="/tags/gitbook/" rel="tag"># gitbook</a>
+          
+            <a href="/tags/github/" rel="tag"># github</a>
           
         </div>
       

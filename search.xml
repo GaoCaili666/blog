@@ -1,57 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>建立博客系列（二）：next主题相关配置</title>
-    <url>/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<p>详细配置可以参考<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">官网</a></p>
-<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>打开git bash，进入 <code>E:\blog\blog</code>，执行下面的命令，下载速度会有点慢</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
-
-<p>下载完成后，可以看到在themes文件夹下多了一个next文件夹</p>
-<h3 id="hexo的目录结构"><a href="#hexo的目录结构" class="headerlink" title="hexo的目录结构"></a>hexo的目录结构</h3><blockquote>
-<p>_config.yml            //hexo的配置文件 </p>
-<p>source</p>
-<p>​    _posts                //文章（md文件）所在目录</p>
-<p>public                    //根据md文件生成的html文件，执行hexo g生成的文件就在这个目录下</p>
-<p>themes</p>
-<p>​    landscape</p>
-<p>​    next                    //next主题</p>
-<p>​        _config.yml    //next主题的配置文件</p>
-</blockquote>
-<p>这里有两个_config.yml文件，我们把hexo的配置文件称为<strong>站点配置文件</strong>，next主题的配置文件称为<strong>主题配置文件</strong></p>
-<p>打开<strong>站点配置文件</strong>，将theme: 项改为next，记住之后所有的配置中冒号后边都先有空格</p>
-<p><img src="/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726162208708.png" alt="image-20200726162208708"></p>
-<p>运行hexo g， hexo s 打开localhost:4000，看是否成功</p>
-<h3 id="选择next的风格"><a href="#选择next的风格" class="headerlink" title="选择next的风格"></a>选择next的风格</h3><p>打开<strong>主题配置文件</strong>，next提供了四种风格，这里我选择的是Gemini</p>
-<p><img src="/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726162346437.png" alt="image-20200726162346437"></p>
-<h3 id="菜单设置"><a href="#菜单设置" class="headerlink" title="菜单设置"></a>菜单设置</h3><p>打开<strong>主题配置文件</strong></p>
-<p><img src="/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200730205430347.png" alt="image-20200730205430347"></p>
-<p>home是主页，categories是分类，archives是归档，即按时间显示文章，tags是标签，将以上几项的#取消。</p>
-<p><strong>注意：这里要把<code>||</code>前面的空格删掉，不然访问会出现问题</strong></p>
+    <title>建立博客系列（四）：发布第一篇博客</title>
+    <url>/2020/07/30/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h3 id="相关配置"><a href="#相关配置" class="headerlink" title="相关配置"></a>相关配置</h3><p>打开<strong>站点配置文件</strong>，将post_asset_folder设置为true,设置后生成文章的时候会生成一个同名文件夹，供我们放图片。</p>
+<p><img src="/2020/07/30/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/image-20200726170936900.png" alt="image-20200726170936900"></p>
 <p>打开git bash到<code>E:\blog\blog</code>目录，执行以下代码</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cnpm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
 
-<p>打开blog\source\categories\index.md文件，添加type</p>
-<p><img src="/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726163513556.png" alt="image-20200726163513556"></p>
-<p>打开blog\source\tags\index.md文件，添加type</p>
-<p><img src="/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726163535408.png" alt="image-20200726163535408"></p>
-<h3 id="设置头像"><a href="#设置头像" class="headerlink" title="设置头像"></a>设置头像</h3><p>将头像放到 source/images/ 目录下，在<strong>站点配置文件</strong>新增avatar 字段添加路径<img src="/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726163710193.png" alt="image-20200726163710193"></p>
-<h3 id="添加腾讯公益404页面"><a href="#添加腾讯公益404页面" class="headerlink" title="添加腾讯公益404页面"></a>添加腾讯公益404页面</h3><p>腾讯公益404页面，寻找丢失儿童，让大家一起关注此项公益事业！</p>
-<p>如果访问不到资源就会跳转到这个页面</p>
-<p>使用方法，新建 404.html 页面，放到主题的 <code>source</code> 目录下，内容如下：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">HTML</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"content-type"</span> <span class="attr">content</span>=<span class="string">"text/html;charset=utf-8;"</span>/&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=edge,chrome=1"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"robots"</span> <span class="attr">content</span>=<span class="string">"all"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"robots"</span> <span class="attr">content</span>=<span class="string">"index,follow"</span>/&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">href</span>=<span class="string">"https://qzone.qq.com/gy/404/style/404style.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/plain"</span> <span class="attr">src</span>=<span class="string">"http://www.qq.com/404/search_children.js"</span></span></span><br><span class="line"><span class="tag">          <span class="attr">charset</span>=<span class="string">"utf-8"</span> <span class="attr">homePageUrl</span>=<span class="string">"/"</span></span></span><br><span class="line"><span class="tag">          <span class="attr">homePageName</span>=<span class="string">"回到我的主页"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://qzone.qq.com/gy/404/data.js"</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://qzone.qq.com/gy/404/page.js"</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>打开<strong>主题配置文件</strong>，将摘要打开</p>
+<p><img src="/2020/07/30/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/image-20200726171128596.png" alt="image-20200726171128596"></p>
+<p>打开source/_posts文件夹，可以把自动生成的Hello World.md删除</p>
+<h3 id="Typora编辑器"><a href="#Typora编辑器" class="headerlink" title="Typora编辑器"></a>Typora编辑器</h3><p>推荐使用Typora编辑器，<a href="https://www.typora.io/" target="_blank" rel="noopener">下载地址</a></p>
+<p>我们要对Typora进行一些设置</p>
+<p>点开文件/偏好设置，设置为图中一样的就好，这样就可以直接复制图片到文章中，会自动将图片保存进和文章同名的文件夹中</p>
+<p><img src="/2020/07/30/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/image-20200730200949856.png" alt="image-20200730200949856"></p>
+<h3 id="开始写作"><a href="#开始写作" class="headerlink" title="开始写作"></a>开始写作</h3><p>打开git bash到<code>E:\blog\blog</code>目录，执行以下代码</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo new “文章标题”</span><br></pre></td></tr></table></figure>
 
-<h3 id="搜索服务"><a href="#搜索服务" class="headerlink" title="搜索服务"></a>搜索服务</h3><p>执行命令</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cnpm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
-
-<p>在next的配置文件任意位置添加</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br><span class="line">  <span class="attr">limit:</span> <span class="number">10000</span></span><br></pre></td></tr></table></figure>
+<p>增加categories，冒号后是空格，写自己的分类名字<br>增加tags,冒号回车，然后两个空格，横线，标签名，可添加多个标签</p>
+<p><img src="/2020/07/30/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/image-20200726172230372.png" alt="image-20200726172230372"></p>
+<p>然后在下边用MarkDown的语法写文章即可<br>写完之后ctrl+S 保存<br>然后 hexo g,hexo d，就可以发布到自己的博客了！！！！！</p>
 ]]></content>
       <categories>
         <category>建立博客</category>
       </categories>
       <tags>
-        <tag>next</tag>
+        <tag>typora</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>gitbook的使用</title>
+    <url>/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<p>我把leetcode的题解使用gitbook发布，方便每道题的整理</p>
+<h3 id="gitbook简介"><a href="#gitbook简介" class="headerlink" title="gitbook简介"></a>gitbook简介</h3><ul>
+<li><a href="https://www.gitbook.com/" target="_blank" rel="noopener">gitbook官网</a></li>
+<li><a href="https://github.com/GitbookIO/gitbook" target="_blank" rel="noopener">gitbook文档</a></li>
+</ul>
+<h3 id="安装gitbook"><a href="#安装gitbook" class="headerlink" title="安装gitbook"></a>安装gitbook</h3><p>打开git bash,执行以下命令</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install gitbook-cli -g</span><br></pre></td></tr></table></figure>
+
+<p>安装完成之后，你可以使用下面的命令来检验是否安装成功。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> gitbook -V</span></span><br><span class="line">CLI version: 2.3.2</span><br><span class="line">GitBook version: 3.2.3</span><br></pre></td></tr></table></figure>
+
+<p>更多详情请参照 <a href="https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2FGitbookIO%2Fgitbook%2Fblob%2Fmaster%2Fdocs%2Fsetup.md" target="_blank" rel="noopener">GitBook 安装文档</a> 来安装 GitBook。</p>
+<h3 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h3><h4 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h4><p>新建一个book文件夹，执行命令初始化</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> gitbook init</span></span><br><span class="line">warn: no summary file in this book</span><br><span class="line">info: create README.md</span><br><span class="line">info: create SUMMARY.md</span><br><span class="line">info: initialization is finished</span><br></pre></td></tr></table></figure>
+
+<p>可以看到他会创建 README.md 和 SUMMARY.md 这两个文件，README.md 应该不陌生，就是说明文档，而 SUMMARY.md 其实就是书的章节目录，其默认内容如下所示：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># Summary</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">* </span>[<span class="string">Introduction</span>](<span class="link">README.md</span>)</span><br></pre></td></tr></table></figure>
+
+<h4 id="book-json"><a href="#book-json" class="headerlink" title="book.json"></a>book.json</h4><p>该文件主要用来存放配置信息，我先放出我的配置文件。</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"title"</span>: <span class="string">"gclstart的gitbook"</span>,</span><br><span class="line">    <span class="attr">"description"</span>: <span class="string">"好记性不如gclstart笔记"</span>,</span><br><span class="line">    <span class="attr">"author"</span>: <span class="string">"gclstart"</span>,</span><br><span class="line">    <span class="attr">"output.name"</span>: <span class="string">"site"</span>,</span><br><span class="line">    <span class="attr">"language"</span>: <span class="string">"zh-hans"</span>,</span><br><span class="line">    <span class="attr">"gitbook"</span>: <span class="string">"3.2.3"</span>,</span><br><span class="line">    <span class="attr">"root"</span>: <span class="string">"."</span>,</span><br><span class="line">    <span class="attr">"links"</span>: &#123;</span><br><span class="line">        <span class="attr">"sidebar"</span>: &#123;</span><br><span class="line">            <span class="attr">"首页"</span>: <span class="string">"https://gaocaili666.github.io/blog/"</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"plugins"</span>: [</span><br><span class="line">        <span class="string">"code"</span>,</span><br><span class="line">        <span class="string">"-search"</span>,</span><br><span class="line">        <span class="string">"search-pro"</span>,</span><br><span class="line">        <span class="string">"github"</span>,</span><br><span class="line">        <span class="string">"splitter"</span>,</span><br><span class="line">        <span class="string">"tbfed-pagefooter"</span>,</span><br><span class="line">        <span class="string">"donate"</span>,</span><br><span class="line">        <span class="string">"-sharing"</span>,</span><br><span class="line">        <span class="string">"sharing-plus"</span>,</span><br><span class="line">        <span class="string">"prism"</span>,</span><br><span class="line">        <span class="string">"-highlight"</span>,</span><br><span class="line">        <span class="string">"-styles-less"</span>,</span><br><span class="line">        <span class="string">"toggle-chapters"</span>,</span><br><span class="line">        <span class="string">"multipart"</span>,</span><br><span class="line">        <span class="string">"ancre-navigation"</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">"pluginsConfig"</span>: &#123;</span><br><span class="line">        <span class="attr">"github"</span>: &#123;</span><br><span class="line">            <span class="attr">"url"</span>: <span class="string">"https://github.com/GaoCaili666"</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">"code"</span>: &#123;</span><br><span class="line">            <span class="attr">"copyButtons"</span>: <span class="literal">true</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">"tbfed-pagefooter"</span>: &#123;</span><br><span class="line">            <span class="attr">"copyright"</span>: <span class="string">"Copyright © gclstart 2020"</span>,</span><br><span class="line">            <span class="attr">"modify_label"</span>: <span class="string">"发布时间："</span>,</span><br><span class="line">            <span class="attr">"modify_format"</span>: <span class="string">"YYYY-MM-DD HH:mm:ss"</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">"donate"</span>: &#123;</span><br><span class="line">            <span class="attr">"wechat"</span>: <span class="string">"/assets/images/wxpay.png"</span>,</span><br><span class="line">            <span class="attr">"alipay"</span>: <span class="string">"/assets/images/alipay.jpg"</span>,</span><br><span class="line">            <span class="attr">"title"</span>: <span class="string">""</span>,</span><br><span class="line">            <span class="attr">"button"</span>: <span class="string">"赏"</span>,</span><br><span class="line">            <span class="attr">"alipayText"</span>: <span class="string">"支付宝打赏"</span>,</span><br><span class="line">            <span class="attr">"wechatText"</span>: <span class="string">"微信打赏"</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">"sharing"</span>: &#123;</span><br><span class="line">            <span class="attr">"douban"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"facebook"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"google"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"hatenaBookmark"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"instapaper"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"line"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"linkedin"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"messenger"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"pocket"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"qq"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"qzone"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"stumbleupon"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"twitter"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"viber"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"vk"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"weibo"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"whatsapp"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"all"</span>: [</span><br><span class="line">                <span class="string">"google"</span>, <span class="string">"facebook"</span>, <span class="string">"weibo"</span>, <span class="string">"twitter"</span>,</span><br><span class="line">                <span class="string">"qq"</span>, <span class="string">"qzone"</span>, <span class="string">"linkedin"</span>, <span class="string">"pocket"</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">"prism"</span>: &#123;</span><br><span class="line">            <span class="attr">"css"</span>: [</span><br><span class="line">                <span class="string">"prismjs/themes/prism-solarizedlight.css"</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">"lang"</span>: &#123;</span><br><span class="line">                <span class="attr">"flow"</span>: <span class="string">"typescript"</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><p>1、编辑SUMMARY.md，我使用的是Typora编辑器</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># Summary</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">* </span>[<span class="string">介绍</span>](<span class="link">README.md</span>)</span><br><span class="line"></span><br><span class="line"><span class="bullet">* </span>[<span class="string">第1题-第100题</span>](<span class="link">1-100/readme.md</span>)</span><br><span class="line"><span class="bullet">	* </span>[<span class="string">第1题</span>](<span class="link">1-100/1.md</span>)</span><br><span class="line"><span class="bullet">	* </span>[<span class="string">第2题</span>](<span class="link">1-100/2.md</span>)</span><br><span class="line"></span><br><span class="line"><span class="bullet">* </span>[<span class="string">第101题-第200题</span>](<span class="link">101-200/reame.md</span>)</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200729181023365.png" alt="image-20200729181023365"></p>
+<p>2、浏览器浏览：<code>gitbook serve</code><br>执行 <code>gitbook serve</code> 来预览这本书籍，执行命令后会对 Markdown 格式的文档进行转换，默认转换为 html 格式，最后提示 “Serving book on <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000</a>”</p>
+<p>3、运行结果</p>
+<p><img src="/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200729181155317.png" alt="image-20200729181155317"></p>
+<p>4、构建书籍：<code>gitbook build</code><br>默认：将生成的静态网站输出到 _book 目录<br>指定路径：<code>gitbook build [书籍路径] [输出路径]</code><br>指定端口：<code>gitbook serve --port 2333</code><br>生成pdf格式：<code>gitbook pdf ./ ./mybook.pdf</code><br>生成epub格式：<code>gitbook epub ./ ./mybook.epub</code><br>生成 mobi 格式：<code>gitbook mobi ./ ./mybook.mobi</code></p>
+<h3 id="添加域名"><a href="#添加域名" class="headerlink" title="添加域名"></a>添加域名</h3><p>打开腾讯云添加记录，<code>leetcode</code>是二级域名</p>
+<p><img src="/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806141304125.png" alt="image-20200806141304125"></p>
+<h3 id="发布到github"><a href="#发布到github" class="headerlink" title="发布到github"></a>发布到github</h3><p>1、在github上新建一个名为book的仓库，复制仓库地址，我的仓库地址为</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git@github.com:GaoCaili666&#x2F;book.git</span><br></pre></td></tr></table></figure>
+
+<p>2、在book目录下打开git bash，执行以下命令</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">gitbook build . ./docs 	#将生成的静态网站输出到docs目录下</span><br><span class="line">git init				#初始化git</span><br><span class="line">git remote add origin git@github.com:GaoCaili666/book.git	#添加远程地址</span><br><span class="line">git add *</span><br><span class="line">git commit -m "第一次提交"	 #提交代码</span><br><span class="line">git push -u origin master	#推送到远程</span><br></pre></td></tr></table></figure>
+
+<p>3、现在我们使用github的pages服务来创建静态网站，进入项目，点击setting</p>
+<p><img src="/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806115324065.png" alt="image-20200806115324065"></p>
+<p>4、往下滑可以看到Github Pages，我们选择master，再选择/docs，因为我们要把docs里的代码作为静态网站点击save保存</p>
+<p><img src="/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806170905763.png" alt="image-20200806170905763"></p>
+<p>然后在Custom domain中填写leetcode.gclstart.top，并保存</p>
+<p><img src="/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806170932988.png" alt="image-20200806170932988"></p>
+<p>5、等待一会就可以使用leetcode.gclstart.top来访问你的gitbook</p>
+<p>6、以后提交代码，在book目录下打开git bash，只需执行以下代码</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">gitbook build . ./docs</span><br><span class="line">git add *</span><br><span class="line">git commit -m "提交代码"</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>gitbook</category>
+      </categories>
+      <tags>
+        <tag>gitbook</tag>
+        <tag>github</tag>
       </tags>
   </entry>
   <entry>
@@ -189,86 +223,57 @@
       </tags>
   </entry>
   <entry>
-    <title>建立博客系列（四）：发布第一篇博客</title>
-    <url>/2020/07/30/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h3 id="相关配置"><a href="#相关配置" class="headerlink" title="相关配置"></a>相关配置</h3><p>打开<strong>站点配置文件</strong>，将post_asset_folder设置为true,设置后生成文章的时候会生成一个同名文件夹，供我们放图片。</p>
-<p><img src="/2020/07/30/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/image-20200726170936900.png" alt="image-20200726170936900"></p>
+    <title>建立博客系列（二）：next主题相关配置</title>
+    <url>/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<p>详细配置可以参考<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">官网</a></p>
+<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>打开git bash，进入 <code>E:\blog\blog</code>，执行下面的命令，下载速度会有点慢</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+
+<p>下载完成后，可以看到在themes文件夹下多了一个next文件夹</p>
+<h3 id="hexo的目录结构"><a href="#hexo的目录结构" class="headerlink" title="hexo的目录结构"></a>hexo的目录结构</h3><blockquote>
+<p>_config.yml            //hexo的配置文件 </p>
+<p>source</p>
+<p>​    _posts                //文章（md文件）所在目录</p>
+<p>public                    //根据md文件生成的html文件，执行hexo g生成的文件就在这个目录下</p>
+<p>themes</p>
+<p>​    landscape</p>
+<p>​    next                    //next主题</p>
+<p>​        _config.yml    //next主题的配置文件</p>
+</blockquote>
+<p>这里有两个_config.yml文件，我们把hexo的配置文件称为<strong>站点配置文件</strong>，next主题的配置文件称为<strong>主题配置文件</strong></p>
+<p>打开<strong>站点配置文件</strong>，将theme: 项改为next，记住之后所有的配置中冒号后边都先有空格</p>
+<p><img src="/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726162208708.png" alt="image-20200726162208708"></p>
+<p>运行hexo g， hexo s 打开localhost:4000，看是否成功</p>
+<h3 id="选择next的风格"><a href="#选择next的风格" class="headerlink" title="选择next的风格"></a>选择next的风格</h3><p>打开<strong>主题配置文件</strong>，next提供了四种风格，这里我选择的是Gemini</p>
+<p><img src="/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726162346437.png" alt="image-20200726162346437"></p>
+<h3 id="菜单设置"><a href="#菜单设置" class="headerlink" title="菜单设置"></a>菜单设置</h3><p>打开<strong>主题配置文件</strong></p>
+<p><img src="/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200730205430347.png" alt="image-20200730205430347"></p>
+<p>home是主页，categories是分类，archives是归档，即按时间显示文章，tags是标签，将以上几项的#取消。</p>
+<p><strong>注意：这里要把<code>||</code>前面的空格删掉，不然访问会出现问题</strong></p>
 <p>打开git bash到<code>E:\blog\blog</code>目录，执行以下代码</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cnpm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
 
-<p>打开<strong>主题配置文件</strong>，将摘要打开</p>
-<p><img src="/2020/07/30/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/image-20200726171128596.png" alt="image-20200726171128596"></p>
-<p>打开source/_posts文件夹，可以把自动生成的Hello World.md删除</p>
-<h3 id="Typora编辑器"><a href="#Typora编辑器" class="headerlink" title="Typora编辑器"></a>Typora编辑器</h3><p>推荐使用Typora编辑器，<a href="https://www.typora.io/" target="_blank" rel="noopener">下载地址</a></p>
-<p>我们要对Typora进行一些设置</p>
-<p>点开文件/偏好设置，设置为图中一样的就好，这样就可以直接复制图片到文章中，会自动将图片保存进和文章同名的文件夹中</p>
-<p><img src="/2020/07/30/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/image-20200730200949856.png" alt="image-20200730200949856"></p>
-<h3 id="开始写作"><a href="#开始写作" class="headerlink" title="开始写作"></a>开始写作</h3><p>打开git bash到<code>E:\blog\blog</code>目录，执行以下代码</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo new “文章标题”</span><br></pre></td></tr></table></figure>
+<p>打开blog\source\categories\index.md文件，添加type</p>
+<p><img src="/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726163513556.png" alt="image-20200726163513556"></p>
+<p>打开blog\source\tags\index.md文件，添加type</p>
+<p><img src="/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726163535408.png" alt="image-20200726163535408"></p>
+<h3 id="设置头像"><a href="#设置头像" class="headerlink" title="设置头像"></a>设置头像</h3><p>将头像放到 source/images/ 目录下，在<strong>站点配置文件</strong>新增avatar 字段添加路径<img src="/2020/07/26/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9Anext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200726163710193.png" alt="image-20200726163710193"></p>
+<h3 id="添加腾讯公益404页面"><a href="#添加腾讯公益404页面" class="headerlink" title="添加腾讯公益404页面"></a>添加腾讯公益404页面</h3><p>腾讯公益404页面，寻找丢失儿童，让大家一起关注此项公益事业！</p>
+<p>如果访问不到资源就会跳转到这个页面</p>
+<p>使用方法，新建 404.html 页面，放到主题的 <code>source</code> 目录下，内容如下：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">HTML</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"content-type"</span> <span class="attr">content</span>=<span class="string">"text/html;charset=utf-8;"</span>/&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=edge,chrome=1"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"robots"</span> <span class="attr">content</span>=<span class="string">"all"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"robots"</span> <span class="attr">content</span>=<span class="string">"index,follow"</span>/&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">href</span>=<span class="string">"https://qzone.qq.com/gy/404/style/404style.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/plain"</span> <span class="attr">src</span>=<span class="string">"http://www.qq.com/404/search_children.js"</span></span></span><br><span class="line"><span class="tag">          <span class="attr">charset</span>=<span class="string">"utf-8"</span> <span class="attr">homePageUrl</span>=<span class="string">"/"</span></span></span><br><span class="line"><span class="tag">          <span class="attr">homePageName</span>=<span class="string">"回到我的主页"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://qzone.qq.com/gy/404/data.js"</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://qzone.qq.com/gy/404/page.js"</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>增加categories，冒号后是空格，写自己的分类名字<br>增加tags,冒号回车，然后两个空格，横线，标签名，可添加多个标签</p>
-<p><img src="/2020/07/30/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/image-20200726172230372.png" alt="image-20200726172230372"></p>
-<p>然后在下边用MarkDown的语法写文章即可<br>写完之后ctrl+S 保存<br>然后 hexo g,hexo d，就可以发布到自己的博客了！！！！！</p>
+<h3 id="搜索服务"><a href="#搜索服务" class="headerlink" title="搜索服务"></a>搜索服务</h3><p>执行命令</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cnpm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+
+<p>在next的配置文件任意位置添加</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br><span class="line">  <span class="attr">limit:</span> <span class="number">10000</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>建立博客</category>
       </categories>
       <tags>
-        <tag>typora</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>gitbook的使用</title>
-    <url>/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<p>我把leetcode的题解使用gitbook发布，方便每道题的整理</p>
-<h3 id="gitbook简介"><a href="#gitbook简介" class="headerlink" title="gitbook简介"></a>gitbook简介</h3><ul>
-<li><a href="https://www.gitbook.com/" target="_blank" rel="noopener">gitbook官网</a></li>
-<li><a href="https://github.com/GitbookIO/gitbook" target="_blank" rel="noopener">gitbook文档</a></li>
-</ul>
-<h3 id="安装gitbook"><a href="#安装gitbook" class="headerlink" title="安装gitbook"></a>安装gitbook</h3><p>打开git bash,执行以下命令</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install gitbook-cli -g</span><br></pre></td></tr></table></figure>
-
-<p>安装完成之后，你可以使用下面的命令来检验是否安装成功。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> gitbook -V</span></span><br><span class="line">CLI version: 2.3.2</span><br><span class="line">GitBook version: 3.2.3</span><br></pre></td></tr></table></figure>
-
-<p>更多详情请参照 <a href="https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2FGitbookIO%2Fgitbook%2Fblob%2Fmaster%2Fdocs%2Fsetup.md" target="_blank" rel="noopener">GitBook 安装文档</a> 来安装 GitBook。</p>
-<h3 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h3><h4 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h4><p>新建一个book文件夹，执行命令初始化</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> gitbook init</span></span><br><span class="line">warn: no summary file in this book</span><br><span class="line">info: create README.md</span><br><span class="line">info: create SUMMARY.md</span><br><span class="line">info: initialization is finished</span><br></pre></td></tr></table></figure>
-
-<p>可以看到他会创建 README.md 和 SUMMARY.md 这两个文件，README.md 应该不陌生，就是说明文档，而 SUMMARY.md 其实就是书的章节目录，其默认内容如下所示：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># Summary</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">* </span>[<span class="string">Introduction</span>](<span class="link">README.md</span>)</span><br></pre></td></tr></table></figure>
-
-<h4 id="book-json"><a href="#book-json" class="headerlink" title="book.json"></a>book.json</h4><p>该文件主要用来存放配置信息，我先放出我的配置文件。</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"title"</span>: <span class="string">"gclstart的gitbook"</span>,</span><br><span class="line">    <span class="attr">"description"</span>: <span class="string">"好记性不如gclstart笔记"</span>,</span><br><span class="line">    <span class="attr">"author"</span>: <span class="string">"gclstart"</span>,</span><br><span class="line">    <span class="attr">"output.name"</span>: <span class="string">"site"</span>,</span><br><span class="line">    <span class="attr">"language"</span>: <span class="string">"zh-hans"</span>,</span><br><span class="line">    <span class="attr">"gitbook"</span>: <span class="string">"3.2.3"</span>,</span><br><span class="line">    <span class="attr">"root"</span>: <span class="string">"."</span>,</span><br><span class="line">    <span class="attr">"links"</span>: &#123;</span><br><span class="line">        <span class="attr">"sidebar"</span>: &#123;</span><br><span class="line">            <span class="attr">"首页"</span>: <span class="string">"https://gaocaili666.github.io/blog/"</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"plugins"</span>: [</span><br><span class="line">        <span class="string">"code"</span>,</span><br><span class="line">        <span class="string">"-search"</span>,</span><br><span class="line">        <span class="string">"search-pro"</span>,</span><br><span class="line">        <span class="string">"github"</span>,</span><br><span class="line">        <span class="string">"splitter"</span>,</span><br><span class="line">        <span class="string">"tbfed-pagefooter"</span>,</span><br><span class="line">        <span class="string">"donate"</span>,</span><br><span class="line">        <span class="string">"-sharing"</span>,</span><br><span class="line">        <span class="string">"sharing-plus"</span>,</span><br><span class="line">        <span class="string">"prism"</span>,</span><br><span class="line">        <span class="string">"-highlight"</span>,</span><br><span class="line">        <span class="string">"-styles-less"</span>,</span><br><span class="line">        <span class="string">"toggle-chapters"</span>,</span><br><span class="line">        <span class="string">"multipart"</span>,</span><br><span class="line">        <span class="string">"ancre-navigation"</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">"pluginsConfig"</span>: &#123;</span><br><span class="line">        <span class="attr">"github"</span>: &#123;</span><br><span class="line">            <span class="attr">"url"</span>: <span class="string">"https://github.com/GaoCaili666"</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">"code"</span>: &#123;</span><br><span class="line">            <span class="attr">"copyButtons"</span>: <span class="literal">true</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">"tbfed-pagefooter"</span>: &#123;</span><br><span class="line">            <span class="attr">"copyright"</span>: <span class="string">"Copyright © gclstart 2020"</span>,</span><br><span class="line">            <span class="attr">"modify_label"</span>: <span class="string">"发布时间："</span>,</span><br><span class="line">            <span class="attr">"modify_format"</span>: <span class="string">"YYYY-MM-DD HH:mm:ss"</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">"donate"</span>: &#123;</span><br><span class="line">            <span class="attr">"wechat"</span>: <span class="string">"/assets/images/wxpay.png"</span>,</span><br><span class="line">            <span class="attr">"alipay"</span>: <span class="string">"/assets/images/alipay.jpg"</span>,</span><br><span class="line">            <span class="attr">"title"</span>: <span class="string">""</span>,</span><br><span class="line">            <span class="attr">"button"</span>: <span class="string">"赏"</span>,</span><br><span class="line">            <span class="attr">"alipayText"</span>: <span class="string">"支付宝打赏"</span>,</span><br><span class="line">            <span class="attr">"wechatText"</span>: <span class="string">"微信打赏"</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">"sharing"</span>: &#123;</span><br><span class="line">            <span class="attr">"douban"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"facebook"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"google"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"hatenaBookmark"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"instapaper"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"line"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"linkedin"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"messenger"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"pocket"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"qq"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"qzone"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"stumbleupon"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"twitter"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"viber"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"vk"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"weibo"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"whatsapp"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"all"</span>: [</span><br><span class="line">                <span class="string">"google"</span>, <span class="string">"facebook"</span>, <span class="string">"weibo"</span>, <span class="string">"twitter"</span>,</span><br><span class="line">                <span class="string">"qq"</span>, <span class="string">"qzone"</span>, <span class="string">"linkedin"</span>, <span class="string">"pocket"</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">"prism"</span>: &#123;</span><br><span class="line">            <span class="attr">"css"</span>: [</span><br><span class="line">                <span class="string">"prismjs/themes/prism-solarizedlight.css"</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">"lang"</span>: &#123;</span><br><span class="line">                <span class="attr">"flow"</span>: <span class="string">"typescript"</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><p>1、编辑SUMMARY.md，我使用的是Typora编辑器</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># Summary</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">* </span>[<span class="string">介绍</span>](<span class="link">README.md</span>)</span><br><span class="line"></span><br><span class="line"><span class="bullet">* </span>[<span class="string">第1题-第100题</span>](<span class="link">1-100/readme.md</span>)</span><br><span class="line"><span class="bullet">	* </span>[<span class="string">第1题</span>](<span class="link">1-100/1.md</span>)</span><br><span class="line"><span class="bullet">	* </span>[<span class="string">第2题</span>](<span class="link">1-100/2.md</span>)</span><br><span class="line"></span><br><span class="line"><span class="bullet">* </span>[<span class="string">第101题-第200题</span>](<span class="link">101-200/reame.md</span>)</span><br></pre></td></tr></table></figure>
-
-<p><img src="/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200729181023365.png" alt="image-20200729181023365"></p>
-<p>2、浏览器浏览：<code>gitbook serve</code><br>执行 <code>gitbook serve</code> 来预览这本书籍，执行命令后会对 Markdown 格式的文档进行转换，默认转换为 html 格式，最后提示 “Serving book on <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000</a>”</p>
-<p>3、运行结果</p>
-<p><img src="/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200729181155317.png" alt="image-20200729181155317"></p>
-<p>4、构建书籍：<code>gitbook build</code><br>默认：将生成的静态网站输出到 _book 目录<br>指定路径：<code>gitbook build [书籍路径] [输出路径]</code><br>指定端口：<code>gitbook serve --port 2333</code><br>生成pdf格式：<code>gitbook pdf ./ ./mybook.pdf</code><br>生成epub格式：<code>gitbook epub ./ ./mybook.epub</code><br>生成 mobi 格式：<code>gitbook mobi ./ ./mybook.mobi</code></p>
-<h3 id="添加域名"><a href="#添加域名" class="headerlink" title="添加域名"></a>添加域名</h3><p>打开腾讯云添加记录，<code>leetcode</code>是二级域名</p>
-<p><img src="/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806141304125.png" alt="image-20200806141304125"></p>
-<h3 id="发布到github"><a href="#发布到github" class="headerlink" title="发布到github"></a>发布到github</h3><p>1、在github上新建一个名为book的仓库，复制仓库地址，我的仓库地址为</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git@github.com:GaoCaili666&#x2F;book.git</span><br></pre></td></tr></table></figure>
-
-<p>2、先使用 <code>gitbook build</code>命令生成静态网站，再进入 <code>_book</code>文件夹，打开git bash，执行以下命令，这样就可以把<code>_book</code>文件夹下的静态网站提交到github上，这些都是git命令</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line">git remote add origin git@github.com:GaoCaili666/book.git</span><br><span class="line">git add *</span><br><span class="line">git commit -m "第一次提交"</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
-
-<p>3、现在我们使用github的pages服务来创建静态网站，进入项目，点击setting</p>
-<p><img src="/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806115324065.png" alt="image-20200806115324065"></p>
-<p>4、往下滑可以看到Github Pages，我们选择master，在Custom domain中填写leetcode.gclstart.top，并保存</p>
-<p><img src="/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806115414310.png" alt="image-20200806115414310"></p>
-<p>5、等待一会就可以使用leetcode.gclstart.top来访问你的gitbook</p>
-]]></content>
-      <categories>
-        <category>gitbook</category>
-      </categories>
-      <tags>
-        <tag>github</tag>
-        <tag>gitbook</tag>
+        <tag>next</tag>
       </tags>
   </entry>
 </search>
