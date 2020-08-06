@@ -221,7 +221,7 @@
 <p><img src="/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200729181155317.png" alt="image-20200729181155317"></p>
 <p>4、构建书籍：<code>gitbook build</code><br>默认：将生成的静态网站输出到 _book 目录<br>指定路径：<code>gitbook build [书籍路径] [输出路径]</code><br>指定端口：<code>gitbook serve --port 2333</code><br>生成pdf格式：<code>gitbook pdf ./ ./mybook.pdf</code><br>生成epub格式：<code>gitbook epub ./ ./mybook.epub</code><br>生成 mobi 格式：<code>gitbook mobi ./ ./mybook.mobi</code></p>
 <h3 id="添加域名"><a href="#添加域名" class="headerlink" title="添加域名"></a>添加域名</h3><p>打开腾讯云添加记录，<code>leetcode</code>是二级域名</p>
-<p><img src="/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806100122400.png" alt="image-20200806100122400"></p>
+<p><img src="/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806141304125.png" alt="image-20200806141304125"></p>
 <h3 id="发布到github"><a href="#发布到github" class="headerlink" title="发布到github"></a>发布到github</h3><p>1、在github上新建一个名为book的仓库，复制仓库地址，我的仓库地址为</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git@github.com:GaoCaili666&#x2F;book.git</span><br></pre></td></tr></table></figure>
 
