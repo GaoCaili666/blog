@@ -98,7 +98,7 @@
 
 
 
-  <meta name="keywords" content="gitbook,github page服务," />
+  <meta name="keywords" content="github,gitbook," />
 
 
 
@@ -109,19 +109,22 @@
 
 
 
-<meta name="description" content="gitbook简介 gitbook官网 gitbook文档  安装gitbook打开git bash,执行以下命令 1npm install gitbook-cli -g  安装完成之后，你可以使用下面的命令来检验是否安装成功。 123$ gitbook -VCLI version: 2.3.2GitBook version: 3.2.3  更多详情请参照 GitBook 安装文档 来安装 Git">
+<meta name="description" content="我把leetcode的题解使用gitbook发布，方便每道题的整理 gitbook简介 gitbook官网 gitbook文档  安装gitbook打开git bash,执行以下命令 1npm install gitbook-cli -g  安装完成之后，你可以使用下面的命令来检验是否安装成功。 123$ gitbook -VCLI version: 2.3.2GitBook version: 3">
 <meta property="og:type" content="article">
 <meta property="og:title" content="gitbook的使用">
 <meta property="og:url" content="http://yoursite.com/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="gclstart">
-<meta property="og:description" content="gitbook简介 gitbook官网 gitbook文档  安装gitbook打开git bash,执行以下命令 1npm install gitbook-cli -g  安装完成之后，你可以使用下面的命令来检验是否安装成功。 123$ gitbook -VCLI version: 2.3.2GitBook version: 3.2.3  更多详情请参照 GitBook 安装文档 来安装 Git">
+<meta property="og:description" content="我把leetcode的题解使用gitbook发布，方便每道题的整理 gitbook简介 gitbook官网 gitbook文档  安装gitbook打开git bash,执行以下命令 1npm install gitbook-cli -g  安装完成之后，你可以使用下面的命令来检验是否安装成功。 123$ gitbook -VCLI version: 2.3.2GitBook version: 3">
 <meta property="og:image" content="http://yoursite.com/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200729181023365.png">
 <meta property="og:image" content="http://yoursite.com/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200729181155317.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806100122400.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806115324065.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806115414310.png">
 <meta property="article:published_time" content="2020-07-31T09:29:17.000Z">
-<meta property="article:modified_time" content="2020-07-30T12:17:06.281Z">
+<meta property="article:modified_time" content="2020-08-06T03:55:20.392Z">
 <meta property="article:author" content="gclstart">
+<meta property="article:tag" content="github">
 <meta property="article:tag" content="gitbook">
-<meta property="article:tag" content="github page服务">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://yoursite.com/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200729181023365.png">
 
@@ -396,27 +399,28 @@
       
 
       
-        <h2 id="gitbook简介"><a href="#gitbook简介" class="headerlink" title="gitbook简介"></a>gitbook简介</h2><ul>
+        <p>我把leetcode的题解使用gitbook发布，方便每道题的整理</p>
+<h3 id="gitbook简介"><a href="#gitbook简介" class="headerlink" title="gitbook简介"></a>gitbook简介</h3><ul>
 <li><a href="https://www.gitbook.com/" target="_blank" rel="noopener">gitbook官网</a></li>
 <li><a href="https://github.com/GitbookIO/gitbook" target="_blank" rel="noopener">gitbook文档</a></li>
 </ul>
-<h2 id="安装gitbook"><a href="#安装gitbook" class="headerlink" title="安装gitbook"></a>安装gitbook</h2><p>打开git bash,执行以下命令</p>
+<h3 id="安装gitbook"><a href="#安装gitbook" class="headerlink" title="安装gitbook"></a>安装gitbook</h3><p>打开git bash,执行以下命令</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install gitbook-cli -g</span><br></pre></td></tr></table></figure>
 
 <p>安装完成之后，你可以使用下面的命令来检验是否安装成功。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> gitbook -V</span></span><br><span class="line">CLI version: 2.3.2</span><br><span class="line">GitBook version: 3.2.3</span><br></pre></td></tr></table></figure>
 
 <p>更多详情请参照 <a href="https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2FGitbookIO%2Fgitbook%2Fblob%2Fmaster%2Fdocs%2Fsetup.md" target="_blank" rel="noopener">GitBook 安装文档</a> 来安装 GitBook。</p>
-<h2 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h2><h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>新建一个book文件夹，执行命令初始化</p>
+<h3 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h3><h4 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h4><p>新建一个book文件夹，执行命令初始化</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> gitbook init</span></span><br><span class="line">warn: no summary file in this book</span><br><span class="line">info: create README.md</span><br><span class="line">info: create SUMMARY.md</span><br><span class="line">info: initialization is finished</span><br></pre></td></tr></table></figure>
 
 <p>可以看到他会创建 README.md 和 SUMMARY.md 这两个文件，README.md 应该不陌生，就是说明文档，而 SUMMARY.md 其实就是书的章节目录，其默认内容如下所示：</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># Summary</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">* </span>[<span class="string">Introduction</span>](<span class="link">README.md</span>)</span><br></pre></td></tr></table></figure>
 
-<h3 id="book-json"><a href="#book-json" class="headerlink" title="book.json"></a>book.json</h3><p>该文件主要用来存放配置信息，我先放出我的配置文件。</p>
+<h4 id="book-json"><a href="#book-json" class="headerlink" title="book.json"></a>book.json</h4><p>该文件主要用来存放配置信息，我先放出我的配置文件。</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"title"</span>: <span class="string">"gclstart的gitbook"</span>,</span><br><span class="line">    <span class="attr">"description"</span>: <span class="string">"好记性不如gclstart笔记"</span>,</span><br><span class="line">    <span class="attr">"author"</span>: <span class="string">"gclstart"</span>,</span><br><span class="line">    <span class="attr">"output.name"</span>: <span class="string">"site"</span>,</span><br><span class="line">    <span class="attr">"language"</span>: <span class="string">"zh-hans"</span>,</span><br><span class="line">    <span class="attr">"gitbook"</span>: <span class="string">"3.2.3"</span>,</span><br><span class="line">    <span class="attr">"root"</span>: <span class="string">"."</span>,</span><br><span class="line">    <span class="attr">"links"</span>: &#123;</span><br><span class="line">        <span class="attr">"sidebar"</span>: &#123;</span><br><span class="line">            <span class="attr">"首页"</span>: <span class="string">"https://gaocaili666.github.io/blog/"</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"plugins"</span>: [</span><br><span class="line">        <span class="string">"code"</span>,</span><br><span class="line">        <span class="string">"-search"</span>,</span><br><span class="line">        <span class="string">"search-pro"</span>,</span><br><span class="line">        <span class="string">"github"</span>,</span><br><span class="line">        <span class="string">"splitter"</span>,</span><br><span class="line">        <span class="string">"tbfed-pagefooter"</span>,</span><br><span class="line">        <span class="string">"donate"</span>,</span><br><span class="line">        <span class="string">"-sharing"</span>,</span><br><span class="line">        <span class="string">"sharing-plus"</span>,</span><br><span class="line">        <span class="string">"prism"</span>,</span><br><span class="line">        <span class="string">"-highlight"</span>,</span><br><span class="line">        <span class="string">"-styles-less"</span>,</span><br><span class="line">        <span class="string">"toggle-chapters"</span>,</span><br><span class="line">        <span class="string">"multipart"</span>,</span><br><span class="line">        <span class="string">"ancre-navigation"</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">"pluginsConfig"</span>: &#123;</span><br><span class="line">        <span class="attr">"github"</span>: &#123;</span><br><span class="line">            <span class="attr">"url"</span>: <span class="string">"https://github.com/GaoCaili666"</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">"code"</span>: &#123;</span><br><span class="line">            <span class="attr">"copyButtons"</span>: <span class="literal">true</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">"tbfed-pagefooter"</span>: &#123;</span><br><span class="line">            <span class="attr">"copyright"</span>: <span class="string">"Copyright © gclstart 2020"</span>,</span><br><span class="line">            <span class="attr">"modify_label"</span>: <span class="string">"发布时间："</span>,</span><br><span class="line">            <span class="attr">"modify_format"</span>: <span class="string">"YYYY-MM-DD HH:mm:ss"</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">"donate"</span>: &#123;</span><br><span class="line">            <span class="attr">"wechat"</span>: <span class="string">"/assets/images/wxpay.png"</span>,</span><br><span class="line">            <span class="attr">"alipay"</span>: <span class="string">"/assets/images/alipay.jpg"</span>,</span><br><span class="line">            <span class="attr">"title"</span>: <span class="string">""</span>,</span><br><span class="line">            <span class="attr">"button"</span>: <span class="string">"赏"</span>,</span><br><span class="line">            <span class="attr">"alipayText"</span>: <span class="string">"支付宝打赏"</span>,</span><br><span class="line">            <span class="attr">"wechatText"</span>: <span class="string">"微信打赏"</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">"sharing"</span>: &#123;</span><br><span class="line">            <span class="attr">"douban"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"facebook"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"google"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"hatenaBookmark"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"instapaper"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"line"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"linkedin"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"messenger"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"pocket"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"qq"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"qzone"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"stumbleupon"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"twitter"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"viber"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"vk"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"weibo"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"whatsapp"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"all"</span>: [</span><br><span class="line">                <span class="string">"google"</span>, <span class="string">"facebook"</span>, <span class="string">"weibo"</span>, <span class="string">"twitter"</span>,</span><br><span class="line">                <span class="string">"qq"</span>, <span class="string">"qzone"</span>, <span class="string">"linkedin"</span>, <span class="string">"pocket"</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">"prism"</span>: &#123;</span><br><span class="line">            <span class="attr">"css"</span>: [</span><br><span class="line">                <span class="string">"prismjs/themes/prism-solarizedlight.css"</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">"lang"</span>: &#123;</span><br><span class="line">                <span class="attr">"flow"</span>: <span class="string">"typescript"</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>1、编辑SUMMARY.md，我使用的是Typora编辑器</p>
+<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><p>1、编辑SUMMARY.md，我使用的是Typora编辑器</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># Summary</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">* </span>[<span class="string">介绍</span>](<span class="link">README.md</span>)</span><br><span class="line"></span><br><span class="line"><span class="bullet">* </span>[<span class="string">第1题-第100题</span>](<span class="link">1-100/readme.md</span>)</span><br><span class="line"><span class="bullet">	* </span>[<span class="string">第1题</span>](<span class="link">1-100/1.md</span>)</span><br><span class="line"><span class="bullet">	* </span>[<span class="string">第2题</span>](<span class="link">1-100/2.md</span>)</span><br><span class="line"></span><br><span class="line"><span class="bullet">* </span>[<span class="string">第101题-第200题</span>](<span class="link">101-200/reame.md</span>)</span><br></pre></td></tr></table></figure>
 
 <p><img src="/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200729181023365.png" alt="image-20200729181023365"></p>
@@ -424,6 +428,19 @@
 <p>3、运行结果</p>
 <p><img src="/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200729181155317.png" alt="image-20200729181155317"></p>
 <p>4、构建书籍：<code>gitbook build</code><br>默认：将生成的静态网站输出到 _book 目录<br>指定路径：<code>gitbook build [书籍路径] [输出路径]</code><br>指定端口：<code>gitbook serve --port 2333</code><br>生成pdf格式：<code>gitbook pdf ./ ./mybook.pdf</code><br>生成epub格式：<code>gitbook epub ./ ./mybook.epub</code><br>生成 mobi 格式：<code>gitbook mobi ./ ./mybook.mobi</code></p>
+<h3 id="添加域名"><a href="#添加域名" class="headerlink" title="添加域名"></a>添加域名</h3><p>打开腾讯云添加记录，<code>leetcode</code>是二级域名</p>
+<p><img src="/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806100122400.png" alt="image-20200806100122400"></p>
+<h3 id="发布到github"><a href="#发布到github" class="headerlink" title="发布到github"></a>发布到github</h3><p>1、在github上新建一个名为book的仓库，复制仓库地址，我的仓库地址为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git@github.com:GaoCaili666&#x2F;book.git</span><br></pre></td></tr></table></figure>
+
+<p>2、先使用 <code>gitbook build</code>命令生成静态网站，再进入 <code>_book</code>文件夹，打开git bash，执行以下命令，这样就可以把<code>_book</code>文件夹下的静态网站提交到github上，这些都是git命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git remote add origin git@github.com:GaoCaili666/book.git</span><br><span class="line">git add *</span><br><span class="line">git commit -m "第一次提交"</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+
+<p>3、现在我们使用github的pages服务来创建静态网站，进入项目，点击setting</p>
+<p><img src="/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806115324065.png" alt="image-20200806115324065"></p>
+<p>4、往下滑可以看到Github Pages，我们选择master，在Custom domain中填写leetcode.gclstart.top，并保存</p>
+<p><img src="/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/image-20200806115414310.png" alt="image-20200806115414310"></p>
+<p>5、等待一会就可以使用leetcode.gclstart.top来访问你的gitbook</p>
 
       
     </div>
@@ -470,9 +487,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/gitbook/" rel="tag"># gitbook</a>
+            <a href="/tags/github/" rel="tag"># github</a>
           
-            <a href="/tags/github-page%E6%9C%8D%E5%8A%A1/" rel="tag"># github page服务</a>
+            <a href="/tags/gitbook/" rel="tag"># gitbook</a>
           
         </div>
       
@@ -596,7 +613,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -639,7 +656,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#gitbook简介"><span class="nav-number">1.</span> <span class="nav-text">gitbook简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装gitbook"><span class="nav-number">2.</span> <span class="nav-text">安装gitbook</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#入门"><span class="nav-number">3.</span> <span class="nav-text">入门</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化"><span class="nav-number">3.1.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#book-json"><span class="nav-number">3.2.</span> <span class="nav-text">book.json</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用"><span class="nav-number">3.3.</span> <span class="nav-text">使用</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#gitbook简介"><span class="nav-number">1.</span> <span class="nav-text">gitbook简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装gitbook"><span class="nav-number">2.</span> <span class="nav-text">安装gitbook</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#入门"><span class="nav-number">3.</span> <span class="nav-text">入门</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化"><span class="nav-number">3.1.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#book-json"><span class="nav-number">3.2.</span> <span class="nav-text">book.json</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用"><span class="nav-number">3.3.</span> <span class="nav-text">使用</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加域名"><span class="nav-number">4.</span> <span class="nav-text">添加域名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#发布到github"><span class="nav-number">5.</span> <span class="nav-text">发布到github</span></a></li></ol></div>
             
 
           </div>
