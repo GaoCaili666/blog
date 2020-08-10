@@ -400,7 +400,10 @@ gitbook官网
 gitbook文档
 
 安装gitbook打开git bash,执行以下命令
-1npm ins
+1npm install gitbook-cli -g
+
+安装完成之后，你可以使用下面的命令来检验是否安装成功。
+123$ gitbook -VCLI version: 2.3.2GitBook version: 3
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -561,7 +564,12 @@ gitbook文档
           
           相关配置打开站点配置文件，将post_asset_folder设置为true,设置后生成文章的时候会生成一个同名文件夹，供我们放图片。
 
-打开git bash到E:\blog\blog目录，执行以下代
+打开git bash到E:\blog\blog目录，执行以下代码
+1cnpm install https://github.com/CodeFalling/hexo-asset-image --save
+
+打开主题配置文件，将摘要打开
+
+打开source/_po
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -723,7 +731,11 @@ gitbook文档
           前面看到的只是本地效果，别人是看不到你写的博客的，因此我们要部署到github上，并使用自己的域名进行访问
 在github上创建仓库1、首先你要注册一个github账号
 2、创建一个仓库
-点击new 
+点击new repository
+
+填写仓库名称blog，点击create repository创建仓库
+
+添加SSH公钥我们下载/克隆项目有两种方式https和SSH方式，https方式每次操作都需要输入git
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -884,7 +896,11 @@ gitbook文档
           
           详细配置可以参考官网
 下载打开git bash，进入 E:\blog\blog，执行下面的命令，下载速度会有点慢
-1git clone https://github.com/iissnan/hexo-
+1git clone https://github.com/iissnan/hexo-theme-next themes/next
+
+下载完成后，可以看到在themes文件夹下多了一个next文件夹
+hexo的目录结构
+_config.yml            //hexo的配置文
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1046,7 +1062,8 @@ gitbook文档
           此教程采用hexo+github搭建博客
 git你要熟悉git并在你的电脑里安装git，git的详细知识可以参考廖雪峰老师的git教程
 其实这里也用不到太多的git命令，不用过于担心
-搭建Hexohe
+搭建Hexohexo是一款基于Node.js的静态博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
+安装node.js简单的讲node是一个Javasc
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1186,6 +1203,20 @@ git你要熟悉git并在你的电脑里安装git，git的详细知识可以参�
           
 
           
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友链
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://leetcode.gclstart.top/" title="leetcode刷题" target="_blank">leetcode刷题</a>
+                  </li>
+                
+              </ul>
+            </div>
           
 
           

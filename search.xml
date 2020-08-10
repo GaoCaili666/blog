@@ -79,7 +79,7 @@
   <entry>
     <title>gitbook的使用</title>
     <url>/2020/07/31/gitbook%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<p>我把leetcode的题解使用gitbook发布，方便每道题的整理</p>
+    <content><![CDATA[<p>我把<a href="https://leetcode.gclstart.top/" target="_blank" rel="noopener">leetcode的题解</a>使用gitbook发布，方便每道题的整理</p>
 <h3 id="gitbook简介"><a href="#gitbook简介" class="headerlink" title="gitbook简介"></a>gitbook简介</h3><ul>
 <li><a href="https://www.gitbook.com/" target="_blank" rel="noopener">gitbook官网</a></li>
 <li><a href="https://github.com/GitbookIO/gitbook" target="_blank" rel="noopener">gitbook文档</a></li>
